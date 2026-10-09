@@ -1,0 +1,34 @@
+import { AppTheme } from "theme.slint";
+
+// ---------------------------------------------------------------------------
+// Data shapes
+// ---------------------------------------------------------------------------
+
+export struct SampleStruct {
+    name: string,
+}
+
+
+// ---------------------------------------------------------------------------
+// Atoms
+// ---------------------------------------------------------------------------
+
+component SampleAtom inherits Rectangle {
+}
+
+
+// ---------------------------------------------------------------------------
+// Root
+// ---------------------------------------------------------------------------
+
+export component MainWindow inherits Window {
+    title: "Sample Project";
+    preferred-width: 1280px;
+    preferred-height: 800px;
+    min-width: 1024px;      
+    min-height: 640px;
+    background: AppTheme.bg-deepest;
+    default-font-family: AppTheme.font-body;
+    default-font-size: 14px;
+    default-font-weight: 400;
+}
